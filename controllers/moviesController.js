@@ -17,7 +17,7 @@ exports.create = (req, res) => {
     newMovie.save()
       .then(savedMovie => {
         console.log("movies="+savedMovie);
-        res.json({
+        res.status(201).json({
           status: "success",
           message: 'Successfully Created',
           data: savedMovie

@@ -3,7 +3,7 @@ var { Schema } = mongoose;
 
 var movieSchema = new Schema({
   title: {
-    type: "string",
+    type: String,
   },
   date: { type: Date, default: Date.now },
   release_date: {
@@ -11,7 +11,7 @@ var movieSchema = new Schema({
     default: "false",
   },
   director: {
-    type: "string",
+    type: String,
   },
   rating: {
     type: Number,
